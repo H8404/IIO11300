@@ -38,8 +38,20 @@ namespace Tehtava1
             {
                 int w = Int32.Parse(txtWidht.Text);
                 int h = Int32.Parse(txtHeight.Text);
-               double result = w * h;
-                txtWindow.Text = result.ToString();
+                int wood = Int32.Parse(txtWidhtWood.Text);
+
+                //Ikkunan pinta-ala
+                int windowArea = (w - 2 * wood) * (h - 2 * wood);
+                txtWindow.Text = windowArea.ToString() + " mm^2";
+
+                //Karmin pinta-ala
+                int woodArea = w * h - windowArea;
+                txtWood.Text = woodArea.ToString() + " mm^2";
+
+                //Karmin piiri
+                int woodP = w + w + h + h;
+                txtWoodP.Text = woodP.ToString() + " mm";
+                
                // EI NÄIN: BusinessLogicWindow.CalculatePerimeter(1, 1);
             }
             catch (Exception ex)

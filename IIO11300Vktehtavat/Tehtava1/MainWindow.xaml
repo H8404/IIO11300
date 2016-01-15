@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tehtava1"
         mc:Ignorable="d"
-        Title="Oy K-S Windows Ab" Height="421" Width="670.5" FontSize="18">
+        Title="Oy K-S Windows Ab" Height="421" Width="675.5" FontSize="18">
     <Grid>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="662">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="668">
 
             <StackPanel Orientation="Vertical" Width="310">
                 <Rectangle x:Name="myRectangle" Fill="#FF10ABF3" StrokeThickness="10" Width="271" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,100" Stroke="#FF85501B" />
@@ -20,13 +20,22 @@
                 <TextBlock x:Name="tbWood" Text="Karmin pinta-ala:" Height="22" Margin="5,10,0,0" FontSize="15" />
                 <TextBlock x:Name="tbWoodP" Text="Karmin piiri:" Height="22" Margin="5,10,0,0" FontSize="15" />
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="0,0,0,0" RenderTransformOrigin="0.434,2.506" Width="217">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0" RenderTransformOrigin="0.434,2.506" Width="213">
                 <TextBox x:Name="txtWidht"  Height="25" Margin="10,10,10,0" />
                 <TextBox x:Name="txtHeight"  Height="25" Margin="10,10,10,0" />
                 <TextBox x:Name="txtWidhtWood" Text="45" Height="25" Margin="10,10,10,0" />
-                <TextBlock x:Name="txtWindow" TextWrapping="Wrap" Margin="66,40,65,0" Background="#FFB8F1F3" />
-                <TextBlock x:Name="txtWood" TextWrapping="Wrap"  Margin="66,10,65,0" Background="#FFB8F1F3" />
-                <TextBlock x:Name="txtWoodP" TextWrapping="Wrap"  Margin="66,10,65,0" Background="#FFB8F1F3" />
+                <TextBlock x:Name="txtWindow" TextWrapping="Wrap" Margin="10,40,10,0" Background="#FFB8F1F3" />
+                <TextBlock x:Name="txtWood" TextWrapping="Wrap"  Margin="10,10,11,0" Background="#FFB8F1F3" RenderTransformOrigin="0.5,0.5" >
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.39"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <TextBlock x:Name="txtWoodP" TextWrapping="Wrap"  Margin="10,10,10,0" Background="#FFB8F1F3" />
                 <Button x:Name="btnCalculate" Content="Laske pinta-ala ja piiri" Height="32" Click="btnCalculate_Click" Margin="10,50,10,0" Background="#FFD9E2D8"/>
                 <Button x:Name="btnClose" Content="Sulje" Height="29" Click="btnClose_Click" Margin="10,10,10,0"/>
             </StackPanel>
