@@ -36,8 +36,10 @@ namespace Tehtava1
             //TODO
             try
             {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
+                int w = Int32.Parse(txtWidht.Text);
+                int h = Int32.Parse(txtHeight.Text);
+               double result = w * h;
+                txtWindow.Text = result.ToString();
                // EI NÄIN: BusinessLogicWindow.CalculatePerimeter(1, 1);
             }
             catch (Exception ex)
