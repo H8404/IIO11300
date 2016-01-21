@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1MediaPlayer", "H1MediaPlayer\H1MediaPlayer.csproj", "{493AC6D2-C1B2-4F69-A3C7-D965B061FF86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava2", "tehtava2\tehtava2.csproj", "{73F231B0-E966-45E2-B148-9DE91BD2B719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{493AC6D2-C1B2-4F69-A3C7-D965B061FF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{493AC6D2-C1B2-4F69-A3C7-D965B061FF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{493AC6D2-C1B2-4F69-A3C7-D965B061FF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F231B0-E966-45E2-B148-9DE91BD2B719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F231B0-E966-45E2-B148-9DE91BD2B719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F231B0-E966-45E2-B148-9DE91BD2B719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F231B0-E966-45E2-B148-9DE91BD2B719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
