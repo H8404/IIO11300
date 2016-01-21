@@ -19,7 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Tehtava1
+namespace JAMK.IT.IIO11300
 {
   /// <summary>
   /// Interaction logic for MainWindow.xaml
@@ -64,11 +64,25 @@ namespace Tehtava1
             }
         }
 
+
     private void btnClose_Click(object sender, RoutedEventArgs e)
     {
             //Käynissä olevan sovelluksen sulkeminen
       Application.Current.Shutdown();
     }
+
+    private void btnCalculateOO_Click(object sender, RoutedEventArgs e)
+        {
+            //OLION avulla lasketaan pinta-ala ja piiri
+            //luodaan olio
+            Ikkuna ikk = new Ikkuna();
+            ikk.Leveys = Double.Parse(txtWidht.Text);
+            ikk.Korkeus = Double.Parse(txtHeight.Text);
+            //VE1 Pinta-alan laskeminen kutsumalla metodia
+            txtWindow.Text = ikk.LaskePintaAla().ToString();
+            //VE2 pinta-ala on olion ominaisuus
+            txtWindow.Text = ikk.PintaAla.ToString();
+        }
   }
 
 

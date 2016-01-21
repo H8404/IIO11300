@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="My Finest Media Player" Height="350" Width="525" FontSize="18">
     <Grid>
-        <Button x:Name="btnPlay" Content="Soita rockia" HorizontalAlignment="Left" Margin="93,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnPause" Content="Pauseta soitto" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnStop" Content="Soitto seis" HorizontalAlignment="Left" Margin="303,10,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnPlay" Content="Soita rockia" HorizontalAlignment="Left" Margin="71,10,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button x:Name="btnPause" Content="Pauseta soitto" HorizontalAlignment="Left" Margin="198,10,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button x:Name="btnStop" Content="Soitto seis" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Width="122"/>
 
     </Grid>
 </Window>
