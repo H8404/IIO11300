@@ -39,17 +39,21 @@ namespace tehtava2
         {
             int boxIndex = comboBox.SelectedIndex;
             int r = Int32.Parse(rows.Text);
+
             if (boxIndex == 0)
             {
                 numbers.Text = BLWindow.DrawRandom();
             }
             if (boxIndex == 1)
             {
+
                 numbers.Text = BLWindow.DrawViking();
             }
-            if (boxIndex == 2) {
+            if (boxIndex == 2)
+            {
                 numbers.Text = BLWindow.DrawEuro();
             }
+            
         }
 
         private void clear_Click(object sender, RoutedEventArgs e)

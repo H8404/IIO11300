@@ -20,7 +20,7 @@ namespace tehtava2
             }
 
 
-            return string.Join(" ",randomNumbers);
+            return string.Join(" ", randomNumbers);
         }
         public static string DrawViking()
         {
@@ -33,7 +33,7 @@ namespace tehtava2
                 randomNumbers[i] = random.Next(1, 49);
             }
 
-            return string.Join(" ", randomNumbers);
+            return string.Join(" ", randomNumbers) + "\n";
         }
         public static string DrawEuro()
         {
