@@ -76,7 +76,9 @@ namespace H1MediaPlayer
             mediaElement.Stop();
             mediaElement.Pause();
             //nappulat käyttöön
-            SetMyButtons();
+            btnPause.IsEnabled = !IsPlaying;
+            btnStop.IsEnabled =! IsPlaying;
+            btnPlay.IsEnabled = IsPlaying;
         }
         private void SetMyButtons()
         {

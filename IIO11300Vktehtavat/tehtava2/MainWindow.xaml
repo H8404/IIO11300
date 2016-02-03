@@ -5,19 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tehtava2"
         mc:Ignorable="d"
-        Title="WinLotto" Height="350" Width="284.956">
+        Title="WinLotto" Height="517" Width="289.956">
     <Grid Margin="0,0,2,0" Background="#FFE0E0E0">
-        <Label x:Name="game" Content="Choocse the game" HorizontalAlignment="Left" Margin="10,11,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="141,15,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged">
+        <Label x:Name="game" Content="Choocse the game" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="141,23,0,0" VerticalAlignment="Top" Width="120" >
             <ComboBoxItem  Name="suomi">Suomi</ComboBoxItem>
             <ComboBoxItem  Name="viking">VikingLotto</ComboBoxItem>
             <ComboBoxItem  Name="euro">Eurojackpot</ComboBoxItem>
         </ComboBox>
-        <Label x:Name="row" Content="Number of drawns" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,43,0,0"/>
-        <TextBox x:Name="rows" HorizontalAlignment="Left" Height="23" Margin="141,46,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="37"/>
-        <Button x:Name="draw" Content="draw" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="44,89,0,0" Click="draw_Click"/>
-        <Button x:Name="clear" Content="clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="141,89,0,0" Click="clear_Click"/>
-        <TextBox x:Name="numbers" HorizontalAlignment="Left" Height="163" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" Margin="10,121,0,0"/>
-        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="190,289,0,0" VerticalAlignment="Top" Width="75" Click="Close_Click"/>
+        <Label x:Name="row" Content="Number of drawns" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,59,0,0"/>
+        <TextBox x:Name="rows" HorizontalAlignment="Left" Height="23" Margin="141,63,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="37"/>
+        <Label x:Name="file" Content="Filename" HorizontalAlignment="Left" Margin="5,104,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFileName" Text=""  Margin="67,104,15,356" />
+        <Button x:Name="draw" Content="draw" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,145,0,0" Click="draw_Click"/>
+        <Button x:Name="clear" Content="clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="103,145,0,0" Click="clear_Click"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="190,145,0,0" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+        <TextBox x:Name="numbers" HorizontalAlignment="Left" Height="123" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" Margin="10,180,0,0"/>
+        <Label x:Name="lotto" Content="Correct line" Margin="10,308,10,144"/>
+        <TextBox x:Name="txtLotto" Margin="10,342,10,109"/>
+        <Button x:Name="txtCheck" Content="Check" Margin="31,403,161,52" Click="txtCheck_Click"/>
+        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="152,403,0,0" VerticalAlignment="Top" Width="75" Click="Close_Click" Height="31"/>
+        <StatusBar VerticalAlignment="Bottom">
+            <TextBlock x:Name="tbMessages" Text="Messages goes here"/>
+        </StatusBar>
     </Grid>
 </Window>

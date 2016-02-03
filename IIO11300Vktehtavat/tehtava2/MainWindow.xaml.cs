@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using System.Globalization;
 
 namespace tehtava2
 {
@@ -23,12 +25,17 @@ namespace tehtava2
         public MainWindow()
         {
             InitializeComponent();
+            var culture = CultureInfo.GetCultureInfo("cs-CZ");
+            var dateTimeInfo = DateTimeFormatInfo.GetInstance(culture);
+
+            var dateTime = DateTime.Today;
+
+            int weekNumber = culture.Calendar.GetWeekOfYear(dateTime, dateTimeInfo.CalendarWeekRule, dateTimeInfo.FirstDayOfWeek);
+
+            txtFileName.Text = "C:\\Users\\Hanna\\Documents\\lotto" + weekNumber + ".txt";
         }
 
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
 
         private void Close_Click(object sender, RoutedEventArgs e)
         {
@@ -61,6 +68,60 @@ namespace tehtava2
             rows.Text = "1";
             numbers.Clear();
             comboBox.SelectedIndex = -1;
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+                string filename = txtFileName.Text;
+                if (!File.Exists(filename))
+                {
+                    
+                    using (StreamWriter sw = File.CreateText(filename))
+                    {
+                        
+                        sw.WriteLine(numbers.Text);
+                        tbMessages.Text = "Rivi tallennettu tiedostoon";
+                    }
+                }
+                else {
+                    using (StreamWriter sw = File.AppendText(filename))
+                    {
+                      
+                        sw.WriteLine(numbers.Text);
+                        tbMessages.Text = "Rivi tallennettu tiedostoon";
+                        
+
+                    }
+                   
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                tbMessages.Text = ex.Message;
+            }
+        }
+
+        private void txtCheck_Click(object sender, RoutedEventArgs e)
+        {
+            String correctline = txtLotto.Text;
+            string filename = txtFileName.Text;
+            string line = null;
+            if (File.Exists(filename))
+            {
+                using (StreamReader sr = File.OpenText(filename))
+                {
+                    
+                    line = sr.ReadLine();
+
+                }
+
+            }
+
         }
     }
 }
