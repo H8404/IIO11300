@@ -118,6 +118,7 @@ namespace tehtava2
                     
                     line = sr.ReadLine();
 
+
                 }
 
             }
