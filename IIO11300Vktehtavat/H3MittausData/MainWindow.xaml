@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H3MittausData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" FontSize="18">
+        Title="MainWindow" Height="350" Width="612.711" FontSize="18">
     <Grid>
         <TabControl x:Name="tabControl" 
                     HorizontalAlignment="Stretch" 
@@ -17,7 +17,9 @@
                             <TextBlock Text="Tänään on:"/>
                             <TextBlock x:Name="txtToday"/>
                             <TextBlock Text="Tiedostonimi:" Margin="10,0,0,0"/>
-                            <TextBox x:Name="txtFileName" Text="d:\temp\testi.txt"/>
+                            <TextBox x:Name="txtFileName" Text="D:\H8404\teksti.txt"/>
+                            <Button x:Name="btnSave" Content="Tallenna" Click="btnSave_Click"/>
+                            <Button x:Name="btnRead" Content="Hae tiedot" Click="btnRead_Click" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="klo:" />
@@ -27,7 +29,7 @@
                             <Button x:Name="btnSaveData" Content="New data" Margin="10,0,0,0" Click="btnSaveData_Click"/>
                         </StackPanel>
                         <StackPanel>
-                            <ListBox Name="lbData" />
+                            <ListBox x:Name="lbData" />
                         </StackPanel>
                     </StackPanel>
                 </Grid>
