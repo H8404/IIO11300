@@ -79,5 +79,65 @@ namespace H3MittausData
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnSerialize_Click(object sender, RoutedEventArgs e)
+        {
+            //kutsutaan serialisointia
+            try
+            {
+                JAMK.IT.IIO11300.Serialisointi.SerialisoiXml(txtFileName.Text, mitatut);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDeSerialize_Click(object sender, RoutedEventArgs e)
+        {
+            //kutsutaan deserialisointia
+            try
+            {
+               mitatut = JAMK.IT.IIO11300.Serialisointi.DeSerialisoiXml(txtFileName.Text);
+                ApplyChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btnSerializeBin_Click(object sender, RoutedEventArgs e)
+        {
+            //kutsutaan serialisointiabin
+            try
+            {
+                JAMK.IT.IIO11300.Serialisointi.Serialisoi(txtFileName.Text, mitatut);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void btnDeSerializeBin_Click(object sender, RoutedEventArgs e)
+        {
+            //kutsutaan deserialisointiabin, palauttaa viittauksen objektiin
+            object obj = new object();
+            try
+            {
+                JAMK.IT.IIO11300.Serialisointi.DeSerialisoi(txtFileName.Text, ref obj);
+                //ja nyt koitetaan castata objekti-tyyppinen olio listaksi mittausdata
+                mitatut = (List<MittausData>)obj;
+                ApplyChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }
