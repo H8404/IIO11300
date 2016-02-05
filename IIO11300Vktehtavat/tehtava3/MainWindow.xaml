@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tehtava3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="275" Width="525">
     <Grid>
-        
+        <StackPanel Margin="0,0,446,0">
+            <Label Content="Etunimi" Margin="0,20,0,0"/>
+            <Label Content="Sukunimi" Margin="0,10,0,0"/>
+            <Label Content="Siirtohinta" Margin="0,10,0,0"/>
+            <Label Content="Seura"  Margin="0,10,0,0"/>
+        </StackPanel>
+        <StackPanel Margin="71,0,316,0">
+            <TextBox x:Name="txtFirstname" Text="" Margin="0,22,0,0"/>
+            <TextBox x:Name="txtLastname" Text="" Margin="0,18,0,0"/>
+            <TextBox x:Name="txtCost" Text="" Margin="0,18,0,0"/>
+            <ComboBox x:Name="comboTeam" Margin="0,18,0,0">
+                <ComboBoxItem Content="Tappara"></ComboBoxItem>
+                <ComboBoxItem Content="Jyp"></ComboBoxItem>
+                <ComboBoxItem Content="Kärpät"></ComboBoxItem>
+                <ComboBoxItem Content="Ässät"></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Margin="201,0,180,0">
+            <Button x:Name="btnNewPlayer" Content="Luo Pelaaja" Margin="10,20,10,0" Click="btnNewPlayer_Click"/>
+            <Button x:Name="btnSavePlayer" Content="Tallenna pelaaja" Margin="10,16,10,0" Click="btnSavePlayer_Click"/>
+            <Button x:Name="btnDeletePlayer" Content="Poista pelaaja" Margin="10,16,10,0" Click="btnDeletePlayer_Click"/>
+            <Button x:Name="btnWritePlayers" Content="Kirjoita pelaajat" Margin="10,16,10,0" Click="btnWritePlayers_Click"/>
+            <Button x:Name="btnQuit" Content="Lopeta" Margin="10,16,10,0" Click="btnQuit_Click"/>
+        </StackPanel>
+        <StackPanel Margin="342,0,0,0">
+            <ListBox x:Name="listPlayer" Margin="10" Height="222" SelectionChanged="listPlayer_SelectionChanged"/>
+        </StackPanel>
     </Grid>
 </Window>

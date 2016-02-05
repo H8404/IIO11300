@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H3MittausData", "H3MittausD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVerySimpleTextFileDemo", "AVerySimpleTextFileDemo\AVerySimpleTextFileDemo.csproj", "{BD0B69C6-BA23-4CA5-BA5E-7F10FC24968F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava3", "tehtava3\tehtava3.csproj", "{64E6E2E1-62DB-482B-BFB8-B5A863F20D18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tehtava4", "tehtava3\tehtava4.csproj", "{64E6E2E1-62DB-482B-BFB8-B5A863F20D18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

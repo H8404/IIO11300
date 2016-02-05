@@ -84,6 +84,7 @@ namespace tehtava2
                         
                         sw.WriteLine(numbers.Text);
                         tbMessages.Text = "Rivi tallennettu tiedostoon";
+
                     }
                 }
                 else {
