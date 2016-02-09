@@ -82,6 +82,11 @@ namespace tehtava3
                 throw ex;
             }
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
         #endregion
     }
 }

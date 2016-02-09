@@ -23,16 +23,20 @@
                 <ComboBoxItem Content="Kärpät"></ComboBoxItem>
                 <ComboBoxItem Content="Ässät"></ComboBoxItem>
             </ComboBox>
+            
         </StackPanel>
         <StackPanel Margin="201,0,180,0">
             <Button x:Name="btnNewPlayer" Content="Luo Pelaaja" Margin="10,20,10,0" Click="btnNewPlayer_Click"/>
-            <Button x:Name="btnSavePlayer" Content="Tallenna pelaaja" Margin="10,16,10,0" Click="btnSavePlayer_Click"/>
+            <Button x:Name="btnSavePlayer" Content="Talleta pelaaja" Margin="10,16,10,0" Click="btnSavePlayer_Click"/>
             <Button x:Name="btnDeletePlayer" Content="Poista pelaaja" Margin="10,16,10,0" Click="btnDeletePlayer_Click"/>
             <Button x:Name="btnWritePlayers" Content="Kirjoita pelaajat" Margin="10,16,10,0" Click="btnWritePlayers_Click"/>
             <Button x:Name="btnQuit" Content="Lopeta" Margin="10,16,10,0" Click="btnQuit_Click"/>
         </StackPanel>
         <StackPanel Margin="342,0,0,0">
-            <ListBox x:Name="listPlayer" Margin="10" Height="222" SelectionChanged="listPlayer_SelectionChanged"/>
+            <ListBox x:Name="listPlayer" Margin="10" Height="188" SelectionChanged="listPlayer_SelectionChanged"/>
+            <StatusBar VerticalAlignment="Bottom">
+                <TextBlock x:Name="tbMessages" Text=""/>
+            </StatusBar>
         </StackPanel>
     </Grid>
 </Window>

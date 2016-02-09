@@ -38,22 +38,40 @@ namespace tehtava3
             player.Team = typeItem.Content.ToString();
             listPlayer.Items.Add(player);
             players.Add(player);
+            tbMessages.Text = "pelaaja luotu";
             
         }
 
         private void btnSavePlayer_Click(object sender, RoutedEventArgs e)
         {
-            Player.SavePlayers(players);
+            if (listPlayer.SelectedItem != null)
+            {
+                Player curPlayer = (Player)listPlayer.SelectedItem;
+                curPlayer.Firstname = txtFirstname.Text;
+                curPlayer.Lastname = txtLastname.Text;
+                curPlayer.Price = Int32.Parse(txtCost.Text);
+                ComboBoxItem typeItem = (ComboBoxItem)comboTeam.SelectedItem;
+                curPlayer.Team = typeItem.Content.ToString();
+                listPlayer.SelectedItem = curPlayer;
+                tbMessages.Text = "Pelaajan tiedot muutettu";
+
+            }
         }
 
         private void btnDeletePlayer_Click(object sender, RoutedEventArgs e)
         {
-
+            
+           listPlayer.Items.Remove(listPlayer.SelectedItem);
+            txtFirstname.Text = "";
+            txtLastname.Text = "";
+            txtCost.Text = "";
+            tbMessages.Text = "Pelaaja poisteetu";
         }
 
         private void btnWritePlayers_Click(object sender, RoutedEventArgs e)
         {
-
+            Player.SavePlayers(players);
+            tbMessages.Text = "Pelaajat tallennettu tiedostoon";
         }
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
@@ -63,12 +81,15 @@ namespace tehtava3
 
         private void listPlayer_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Player curPlayer = listPlayer.SelectedItem as Player;
-             curPlayer = new Player();
-            txtFirstname.Text = curPlayer.Firstname;
-            txtLastname.Text = curPlayer.Lastname;
-            txtCost.Text = curPlayer.Price.ToString();
-            listPlayer.SelectedValue = curPlayer.Team;
+            if (listPlayer.SelectedItem != null)
+            {
+                Player curPlayer = (Player)listPlayer.SelectedItem;
+                txtFirstname.Text = curPlayer.Firstname.ToString();
+                txtLastname.Text = curPlayer.Lastname.ToString();
+                txtCost.Text = curPlayer.Price.ToString();
+                string curteam = curPlayer.Team.ToString();
+                comboTeam.SelectedValue = curPlayer.Team;
+            }
         }
     }
 }
