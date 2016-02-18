@@ -107,6 +107,7 @@ namespace H5movie
                 }
                 if (poistettava != null)
                 {
+
                     //poistetaan noodi juuresta
                     root.RemoveChild(poistettava);
                     xdpMovies.Document.Save(filu);
