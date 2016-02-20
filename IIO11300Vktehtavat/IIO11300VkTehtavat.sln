@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H4tyontekijatWPF", "H4tyont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H5movie", "H5movie\H5movie.csproj", "{AD3D6EC3-F11F-490C-B9AF-66192B43CF83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava6", "Tehtava6\Tehtava6.csproj", "{8FE2A151-4840-4095-BF14-FCC15829BC96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{AD3D6EC3-F11F-490C-B9AF-66192B43CF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3D6EC3-F11F-490C-B9AF-66192B43CF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3D6EC3-F11F-490C-B9AF-66192B43CF83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE2A151-4840-4095-BF14-FCC15829BC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE2A151-4840-4095-BF14-FCC15829BC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE2A151-4840-4095-BF14-FCC15829BC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE2A151-4840-4095-BF14-FCC15829BC96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
