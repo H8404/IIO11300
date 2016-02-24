@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace Tehtava6
 {
@@ -21,6 +24,8 @@ namespace Tehtava6
     /// </summary>
     public partial class MainWindow : Window
     {
+        string country="";
+        XmlDataProvider provider = new XmlDataProvider();
         public MainWindow()
         {
             InitializeComponent();
@@ -30,15 +35,41 @@ namespace Tehtava6
         {
             try
             {
+               country = cbWine.SelectedValue.ToString();
 
-                string country = cbWine.SelectedValue.ToString();
-              
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show(ex.Message);
             }
+
+            XDocument X = XDocument.Load("D:\\Viinit1.xml");
+            var filter = X.Element("viinikellari").Elements("wine").Where(E => E.Element("maa").Value == country);
+            var result = filter.ToList();
+            dgWine.ItemsSource = result;
+            
+        }
+
+
+        private void btnAllWine_Click(object sender, RoutedEventArgs e)
+        {
+            LoadXMLData();
+            Binding binding = new Binding();
+            binding.Source = provider;
+            binding.XPath = "/viinikellari/wine";
+            dgWine.SetBinding(DataGrid.ItemsSourceProperty, binding);
+
+        }
+
+        private void LoadXMLData()
+        {
+            string filePath = "D:\\Viinit1.xml";
+
+            System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+            doc.Load(filePath);
+            provider.Document = doc;
+            provider.XPath = "/viinikellari/wine";
         }
 
     }

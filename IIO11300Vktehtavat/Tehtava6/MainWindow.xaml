@@ -11,6 +11,12 @@
     <Grid>
         <Grid.Resources>
             <XmlDataProvider x:Key="WineData" Source="D:\\Viinit1.xml" XPath="/viinikellari"/>
+            <XmlDataProvider x:Key="WineData2" Source="D:\\Viinit1.xml" XPath="/viinikellari/wine"/>
+            <CollectionViewSource Source="{StaticResource WineData2}" x:Key="countryView">
+                <CollectionViewSource.GroupDescriptions>
+                    <PropertyGroupDescription PropertyName="maa" />
+                </CollectionViewSource.GroupDescriptions>
+            </CollectionViewSource>
         </Grid.Resources>
         <StackPanel>
             <StackPanel.Background>
@@ -20,11 +26,12 @@
                 </LinearGradientBrush>
             </StackPanel.Background>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="btnWine" Content="Hae Viinit" Width="100" Margin="40,10,0,0" Click="btnWine_Click" />
-                <ComboBox x:Name="cbWine" Width="100" Margin="10,10,0,0"  DataContext="{StaticResource WineData}" ItemsSource="{Binding XPath=/viinikellari/wine/maa}" SelectedValuePath="/viinikellari/wine/maa"/>
+                <Button x:Name="btnAllWine" Content="Näytä kaikki viinit" Width="100" Margin="40,10,0,0" Click="btnAllWine_Click"  />
+                <Button x:Name="btnWine" Content="Hae Viinit" Width="100" Margin="10,10,0,0" Click="btnWine_Click" />
+                <ComboBox x:Name="cbWine" Width="100" Margin="10,10,0,0" ItemsSource="{Binding Source={StaticResource countryView}, Path=Groups}" SelectedValuePath="Name" />
             </StackPanel>
             <StackPanel>
-                <DataGrid x:Name="dgWine" DataContext="{StaticResource WineData}" ItemsSource="{Binding XPath=wine}" AutoGenerateColumns="False" Margin="10,10,10,10" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <DataGrid x:Name="dgWine" ItemsSource="{Binding Source={StaticResource WineData2}}" AutoGenerateColumns="False" Margin="10,10,10,10" ScrollViewer.VerticalScrollBarVisibility="Visible">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Nimi" Binding="{Binding XPath=nimi}" />
                         <DataGridTextColumn Header="Maa" Binding="{Binding XPath=maa}" />
