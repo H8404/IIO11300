@@ -1,0 +1,36 @@
+﻿<Window x:Class="Tehtava7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava7"
+        mc:Ignorable="d"
+        Title="Tarkista salasanasi" Height="210" Width="400">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock FontSize="20">Anna tarkistettava salasana</TextBlock>
+                <TextBox x:Name="txtPassword" FontSize="20" TextChanged="txtPassword_TextChanged" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <TextBlock Text="Merkkejä: "/>
+                    <TextBlock Text="Isoja kirjaimia: "/>
+                    <TextBlock Text="Pieniä kirjaimia: "/>
+                    <TextBlock Text="Numeroita: "/>
+                    <TextBlock Text="Erikoismerkkejä: "/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock x:Name="txtMerkki" Text="{Binding ElementName=txtPassword, Path=Text.Length}"/>
+                    <TextBlock x:Name="txtIso" Text=""/>
+                    <TextBlock x:Name="txtPieni" Text=""/>
+                    <TextBlock x:Name="txtNumero" Text=""/>
+                    <TextBlock x:Name="txtErikoinen" Text=""/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock x:Name="txtTulos" FontSize="30" Background="Gray" Text="Anna salasana"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -45,9 +45,10 @@ namespace Tehtava6
             }
 
             XDocument X = XDocument.Load("D:\\Viinit1.xml");
-            var filter = X.Element("viinikellari").Elements("wine").Where(E => E.Element("maa").Value == country);
+            var filter = X.Element("viinikellari").Elements("wine").Where(E => E.Element("maa").Value == country);;
             var result = filter.ToList();
             dgWine.ItemsSource = result;
+
             
         }
 
