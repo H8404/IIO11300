@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava7", "Tehtava7\Tehtav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H7ADONETConsole", "H7ADONETConsole\H7ADONETConsole.csproj", "{9237EC6E-C649-4F80-A77A-3F7CBC52A390}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H8ADONETLäsnäolotWPF", "H8ADONETLäsnäolotWPF\H8ADONETLäsnäolotWPF.csproj", "{81CC9111-7179-4608-AF0E-AD0D3AC81E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{9237EC6E-C649-4F80-A77A-3F7CBC52A390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9237EC6E-C649-4F80-A77A-3F7CBC52A390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9237EC6E-C649-4F80-A77A-3F7CBC52A390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CC9111-7179-4608-AF0E-AD0D3AC81E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CC9111-7179-4608-AF0E-AD0D3AC81E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CC9111-7179-4608-AF0E-AD0D3AC81E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CC9111-7179-4608-AF0E-AD0D3AC81E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
