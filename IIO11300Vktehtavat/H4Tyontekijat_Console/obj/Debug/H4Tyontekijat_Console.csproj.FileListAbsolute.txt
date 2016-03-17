@@ -1,0 +1,6 @@
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\bin\Debug\H4Tyontekijat_Console.exe.config
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\bin\Debug\H4Tyontekijat_Console.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\bin\Debug\H4Tyontekijat_Console.pdb
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\obj\Debug\H4Tyontekijat_Console.csprojResolveAssemblyReference.cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\obj\Debug\H4Tyontekijat_Console.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4Tyontekijat_Console\obj\Debug\H4Tyontekijat_Console.pdb

@@ -1,0 +1,16 @@
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\bin\Debug\H6DataBinding.exe.config
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\bin\Debug\H6DataBinding.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\bin\Debug\H6DataBinding.pdb
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\MainWindow.g.cs
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\App.g.cs
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding_MarkupCompile.cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding_MarkupCompile.lref
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\MainWindow.baml
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.g.resources
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.Properties.Resources.resources
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.csproj.GenerateResource.Cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.pdb
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\H6DataBinding.csprojResolveAssemblyReference.cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\PlayerWindow.g.cs
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H6DataBinding\obj\Debug\PlayerWindow.baml

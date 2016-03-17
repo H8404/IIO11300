@@ -1,0 +1,14 @@
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\bin\Debug\H4tyontekijatWPF.exe.config
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\bin\Debug\H4tyontekijatWPF.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\bin\Debug\H4tyontekijatWPF.pdb
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.csprojResolveAssemblyReference.cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\MainWindow.g.cs
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\App.g.cs
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF_MarkupCompile.cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF_MarkupCompile.lref
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\MainWindow.baml
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.g.resources
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.Properties.Resources.resources
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.csproj.GenerateResource.Cache
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.exe
+D:\H8404\REPOS\iio11300\IIO11300\IIO11300Vktehtavat\H4tyontekijatWPF\obj\Debug\H4tyontekijatWPF.pdb
