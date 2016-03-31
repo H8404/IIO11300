@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H10BookShopEF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="500" Width="650">
     <Grid>
         <StackPanel Orientation="Vertical" Background="#FFFFE6C1">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
                     <Button x:Name="btnSearchAsiakkat" Content="Hae Asiakkaat EF" Margin="0,10,0,10" Click="btnSearchAsiakkat_Click" />
                     <Button x:Name="btnHaeKirjat" Content="Hae kirjat EF" Click="btnHaeKirjat_Click" />
+                    <ComboBox x:Name="cbCountries" ItemsSource="{Binding}" Visibility="Hidden" SelectionChanged="cbCountries_SelectionChanged" ></ComboBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Background="#FFEA792B">
                     <StackPanel>
@@ -22,21 +23,32 @@
                         <TextBlock Text="Vuosi: "/>
                     </StackPanel>
                     <StackPanel Name="spBook">
-                        <TextBlock x:Name="tbProduct" Text="{Binding Mode=OneWay}"></TextBlock>
-                        <TextBox x:Name="txtName" Width="200" Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                        <TextBox x:Name="txtAuthor" Width="200" Text="{Binding Path=Author, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                        <TextBox x:Name="txtCountry" Width="200" Text="{Binding Path=Country, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                        <TextBox x:Name="txtYear" Width="200" Text="{Binding Path=Year, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBlock x:Name="tbProduct" Text="{Binding Path=DisplayName2, Mode=OneWay}"></TextBlock>
+                        <TextBox x:Name="txtName" Width="200" Text="{Binding Path=name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox x:Name="txtAuthor" Width="200" Text="{Binding Path=author, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox x:Name="txtCountry" Width="200" Text="{Binding Path=country, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox x:Name="txtYear" Width="200" Text="{Binding Path=year, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         <Button x:Name="btnSave" Content="Tallenna" Margin="0,10,0,10" Click="btnSave_Click" />
                         <Button x:Name="btnNew" Content="Uusi" Margin="0,0,0,10" Click="btnNew_Click" />
                         <Button x:Name="btnDelete" Content="Poista" Margin="0,0,0,10" Click="btnDelete_Click" />
                     </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="Asiakas: "/>
+                        <TextBlock Text="Etunimi: "/>
+                        <TextBlock Text="Sukunimi: "/>
+                        <TextBlock Text="Tilauksia: "/>
+                    </StackPanel>
+                    <StackPanel Name="spCustomer">
+                        <TextBlock Text="{Binding Path=DisplayName, Mode=OneWay}"></TextBlock>
+                        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=firstname, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox Width="200" HorizontalAlignment="Left" Text="{Binding Path=lastname, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        <TextBox Width="50" HorizontalAlignment="Left" Text="{Binding Path=OrderCount, Mode=OneWay}"></TextBox>
+                        <Button x:Name="btnSearch" Content="Hae Asiakkaan tilaukset" Click="btnSearch_Click"/>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
             <StackPanel>
-                <DataGrid x:Name="dgBooks" AutoGenerateColumns="True" ItemsSource="{Binding}" SelectionChanged="dgBooks_SelectionChanged" VerticalScrollBarVisibility="Visible">
-
-                </DataGrid>
+                <DataGrid x:Name="dgBooks" AutoGenerateColumns="True" ItemsSource="{Binding}"  VerticalScrollBarVisibility="Visible" SelectionChanged="dgBooks_SelectionChanged" ></DataGrid>
                 <StatusBar></StatusBar>
             </StackPanel>
         </StackPanel>
