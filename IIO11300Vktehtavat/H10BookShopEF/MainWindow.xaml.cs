@@ -24,5 +24,31 @@ namespace H10BookShopEF
         {
             InitializeComponent();
         }
+
+
+        private void btnSearchAsiakkat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnHaeKirjat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnNew_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

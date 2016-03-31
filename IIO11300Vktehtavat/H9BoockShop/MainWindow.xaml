@@ -1,17 +1,17 @@
-﻿<Window x:Class="H10BookShopEF.MainWindow"
+﻿<Window x:Class="H9BoockShop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:H10BookShopEF"
+        xmlns:local="clr-namespace:H9BoockShop"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel Orientation="Vertical" Background="#FFFFE6C1">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
-                    <Button x:Name="btnSearchAsiakkat" Content="Hae Asiakkaat EF" Margin="0,10,0,10" Click="btnSearchAsiakkat_Click" />
-                    <Button x:Name="btnHaeKirjat" Content="Hae kirjat EF" Click="btnHaeKirjat_Click" />
+                    <Button x:Name="btnSearchTest" Content="Hae testikirjat" Margin="0,10,0,10" Click="btnSearchTest_Click"/>
+                    <Button x:Name="btnSearchSQL" Content="Hae kirjat SQL server" Click="btnSearchSQL_Click"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Background="#FFEA792B">
                     <StackPanel>
@@ -27,9 +27,9 @@
                         <TextBox x:Name="txtAuthor" Width="200" Text="{Binding Path=Author, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         <TextBox x:Name="txtCountry" Width="200" Text="{Binding Path=Country, UpdateSourceTrigger=PropertyChanged}"></TextBox>
                         <TextBox x:Name="txtYear" Width="200" Text="{Binding Path=Year, UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                        <Button x:Name="btnSave" Content="Tallenna" Margin="0,10,0,10" Click="btnSave_Click" />
-                        <Button x:Name="btnNew" Content="Uusi" Margin="0,0,0,10" Click="btnNew_Click" />
-                        <Button x:Name="btnDelete" Content="Poista" Margin="0,0,0,10" Click="btnDelete_Click" />
+                        <Button x:Name="btnSave" Content="Tallenna" Margin="0,10,0,10" Click="btnSave_Click"/>
+                        <Button x:Name="btnNew" Content="Uusi" Margin="0,0,0,10" Click="btnNew_Click"/>
+                        <Button x:Name="btnDelete" Content="Poista" Margin="0,0,0,10" Click="btnDelete_Click"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
